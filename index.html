@@ -58,7 +58,7 @@
               </li>
           </ul>
         </nav>
-        <button class="btn__primary--round">liên hệ ngay</button>
+        <button class="btn__primary--round" data-module="popup">liên hệ ngay</button>
       </div>
     </header>
     <main>
@@ -81,14 +81,14 @@
         </div>     
         <section id="about-us">
             <div class="container about-us">
-                <div class="">
+                <div>
                     <h2 class="title headlined">MỖI NĂM GẦN 250.000 GIA ĐÌNH TIN CHỌN VUS</h2>
                     <p class="text text-dark">
                         Anh văn Hội Việt Mỹ VUS là hệ thống Anh ngữ uy tín hàng đầu tại Việt Nam với hàng triệu học viên đã tin tưởng theo học. Với chất lượng giảng dạy đạt chuẩn quốc tế cùng các trung tâm hiện đại trên khắp cả nước, VUS mang đến những khoá học dành riêng cho từng độ tuổi và trình độ giúp học viên có nền tảng Anh ngữ vững chắc, tăng khả năng giao tiếp và đạt kết quả cao trong các kỳ thi Anh ngữ quốc tế.
                     </p>
                     <button class="btn__primary mt-3">Xem chi tiết</button>
                 </div>
-                <div class="col-6">
+                <div>
                     <video tabindex="-1" class="container" controlslist="nodownload" controls src="./img/videos/Hello! - Super Simple Songs.webm"></video>
                 </div>
             </div>
@@ -198,11 +198,10 @@
                         <p class="text mt-2">
                             Nền tảng vững chắc ngay từ bước khởi đầu, giúp các em phát âm chuẩn, hình thành sự tự tin, dạn dĩ khi tiếp xúc với tiếng Anh.
                         </p>
-                        <a href='#' class="see-more">
-                            <p>>>> Xem chi tiết</p>
-                        </a>                      
                       </div>
-
+                      <a href='#' class="see-more">
+                          <p>>>> Xem chi tiết</p>
+                      </a>   
                   </article>
                   <article class="card__post">
                       <img src="./img/card-post/0-02-06-c524811784982bce02bd3955be3795a7172a9a11a7b100624d57d59f611397cf558b2834.jpg" alt="">
@@ -212,11 +211,10 @@
                         <p class="text mt-2">
                             Nền tảng vững chắc ngay từ bước khởi đầu, giúp các em phát âm chuẩn, hình thành sự tự tin, dạn dĩ khi tiếp xúc với tiếng Anh.
                         </p>
-                        <a href='#' class="see-more">
-                            <p>>>> Xem chi tiết</p>
-                        </a>                      
                       </div>
-
+                      <a href='#' class="see-more">
+                          <p>>>> Xem chi tiết</p>
+                      </a>   
                   </article>
                   <article class="card__post">
                       <img src="./img/card-post/0-02-06-c524811784982bce02bd3955be3795a7172a9a11a7b100624d57d59f611397cf558b2834.jpg" alt="">
@@ -226,18 +224,17 @@
                         <p class="text mt-2">
                             Nền tảng vững chắc ngay từ bước khởi đầu, giúp các em phát âm chuẩn, hình thành sự tự tin, dạn dĩ khi tiếp xúc với tiếng Anh.
                         </p>
-                        <a href='#' class="see-more">
-                            <p>>>> Xem chi tiết</p>
-                        </a>                      
                       </div>
-
+                      <a href='#' class="see-more">
+                          <p>>>> Xem chi tiết</p>
+                      </a>   
                   </article>
                 </div>
             </div>
         </section>
         <div class="sales-bar">
             <span class="icon"></span> <strong class="text-primary size-18"> Bạn cần tư vấn khóa học phù hợp?</strong>
-            <button class="btn__primary--round">Đăng ký tư vấn</button>
+            <button class="btn__primary--round" data-module="popup">Đăng ký tư vấn</button>
 
         </div>       
         <section id="feedback">
@@ -459,8 +456,131 @@
                 </div>
             </div>
         </section>  
+        <section id="consult">
+          <div class="container">
+              <h2 class="title text-center">
+                đăng ký tư vấn để nhận lộ trình học
+              </h2>
+              <div class="consult">
+                  <div class="agency">
+                      <p class="text">
+                        Vui lòng để lại thông tin liên lạc để chúng tôi có thể tư vấn rõ hơn về các khóa học
+                      </p>
+                      <strong class="size-18">
+                        Khu vực miền Nam (TP HCM, Bình Dương, Biên Hòa - Đồng Nai, Vũng Tàu)
+                      </strong>
+                      <a href='tel:028.7308 3333' class="title">
+                        028.7308 3333
+                      </a>
+                      <p class="text">
+                        Thứ Hai đến thứ Sáu: 08:30 – 12:00, 13:30 – 18:00<br/>
+                        Thứ Bảy: 8:30 – 12:00
+                      </p>
+                      <strong class="size-18">
+                        Hà Nội
+                      </strong>
+                      <a href='tel:024.3388 1199' class="title">
+                        024.3388 1199
+                      </a>
+                      <p class="text">
+                        Thứ Hai đến Chủ Nhật: 08:30 – 12:00, 13:30 – 21:00
+                      </p>                      
+                  </div>
+                  <form action="post">
+                      <div class="form-grid">
+                          <div class="grid-2">
+                            <input type="text" name="name" placeholder="Tên học viên*" required>
+                            <input type="text" name="input" placeholder="Ngày tháng năm sinh (dd/mm/yyyy)" required 
+                            pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" 
+                            title="Sai định dạng(01/12/1900)"/>
+                            <input type="text" name="nameParent" placeholder="Tên phụ huynh">
+                            <select name="city">
+                              <option value="0">Tỉnh/Thành phố*</option>
+                              <option>Tp.Hồ Chí Minh</option>
+                              <option>Hà Nội</option>
+                              <option>Bình Dương</option>
+                              <option>Đồng nai</option>
+                              <option>Vũng Tàu</option>
+                              <option>Các tỉnh thành khác#</option>
+                            </select>
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="tel" name="phone" placeholder="Số điện thoại*" required>
+                          </div>
+                          <select name="course">
+                            <option value="">Khóa học quan tâm</option>
+                            <option value="Tiếng Anh Trẻ Em (4 - 11 Tuổi)">Tiếng Anh Trẻ Em (4 - 11 Tuổi)</option>
+                            <option value="Tiếng Anh Thiếu Niên (11-15 Tuổi)">Tiếng Anh Thiếu Niên (11-15 Tuổi)</option>
+                            <option value="Lớp 100% Giáo Viên Nước Ngoài">Lớp 100% Giáo Viên Nước Ngoài</option>
+                            <option value="Luyện Thi IELTS, TOEFL iBT">Luyện Thi IELTS, TOEFL iBT</option>
+                            <option value="Tiếng Anh Dành Cho Người Lớn">Tiếng Anh Dành Cho Người Lớn</option>
+                          </select>
+                          <textarea name="know-more" placeholder="Thông tin thêm về nhu cầu học"></textarea>
+                          <button type="submit" class='btn__primary--round'>gửi thông tin</button>
+                      </div>
+                  </form>
 
+                </div>
+          </div>
+        </section>
 
+        <div class="popup" id="popup">
+          <p class="title text-center text-light">
+            Đăng ký tư vấn để nhận lộ trình học
+          </p>
+          <div class="container__popup">
+            <form action="post">
+              <p title='Close' id="close-popup"></p>
+              <div class="form-grid">
+                  <div class="grid-2">
+                    <input type="text" name="name" placeholder="Tên học viên*" required>
+                    <input type="text" name="input" placeholder="Ngày tháng năm sinh (dd/mm/yyyy)" required 
+                    pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" 
+                    title="Sai định dạng(01/12/1900)"/>
+                    <input type="text" name="nameParent" placeholder="Tên phụ huynh">
+                    <select name="city">
+                      <option value="0">Tỉnh/Thành phố*</option>
+                      <option>Tp.Hồ Chí Minh</option>
+                      <option>Hà Nội</option>
+                      <option>Bình Dương</option>
+                      <option>Đồng nai</option>
+                      <option>Vũng Tàu</option>
+                      <option>Các tỉnh thành khác#</option>
+                    </select>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phone" placeholder="Số điện thoại*" required>
+                  </div>
+                  <select name="course">
+                    <option value="">Khóa học quan tâm</option>
+                    <option value="Tiếng Anh Trẻ Em (4 - 11 Tuổi)">Tiếng Anh Trẻ Em (4 - 11 Tuổi)</option>
+                    <option value="Tiếng Anh Thiếu Niên (11-15 Tuổi)">Tiếng Anh Thiếu Niên (11-15 Tuổi)</option>
+                    <option value="Lớp 100% Giáo Viên Nước Ngoài">Lớp 100% Giáo Viên Nước Ngoài</option>
+                    <option value="Luyện Thi IELTS, TOEFL iBT">Luyện Thi IELTS, TOEFL iBT</option>
+                    <option value="Tiếng Anh Dành Cho Người Lớn">Tiếng Anh Dành Cho Người Lớn</option>
+                  </select>
+                  <textarea name="know-more" placeholder="Thông tin thêm về nhu cầu học"></textarea>
+                  <button type="submit" class='btn__primary--round'>gửi thông tin</button>
+              </div>
+            </form>
+            <div class="consult d-flex justify-content-around align-items-center mt-4">
+              <div class="text-center col-6">
+                <strong class="size-18">
+                  Khu vực miền Nam (TP HCM, Bình Dương, Biên Hòa - Đồng Nai, Vũng Tàu)
+                </strong>
+                <a href='tel:028.7308 3333' class="title">
+                  028.7308 3333
+                </a>
+              </div>
+              <div class="text-center col-6">
+                <strong class="size-18">
+                      Hà Nội
+                </strong>
+                <a href='tel:024.3388 1199' class="title">
+                  024.3388 1199
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
       <div class="container foot__info grid-3">
@@ -484,24 +604,23 @@
               </li>
             </ul>
             <ul>
-                <li><a href="#">Giới Thiệu Về VUS</a></li>
-                <li><a href="#">Các Khoá Học</a></li>
-                <li><a href="#">Tìm Khóa Học Phù Hợp</a></li>
-                <li><a href="#">Các Trung Tâm Tiếng Anh</a></li>
-                <li><a href="#">Góc Học Viên</a></li>
-                <li><a href="#">Thư Viện</a></li>
-                <li><a href="#">Tải ứng dụng VUS tại:</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">Tin Tức Sự Kiện</a></li>
+                <li><a href="#">Cơ Hội Nghề Nghiệp</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách liên kết</a></li>
+                <li><a href="#">Thông tin nhà trường</a></li>
               </ul>            
           </div>
           <div class="foot__contact">
               <p class="text text-smoke">Khu vực miền Nam
               </p>
-              <a href="tel:+(028) 7308 3333" class="text-light mt-1">(028) 7308 3333</a>
-              <p class="text text-smoke">Hà Nội
+              <a href="tel:+(028) 7308 3333" class="text-light ">(028) 7308 3333</a>
+              <p class="text text-smoke mt-1">Hà Nội
               </p>
-              <a href="tel:+(024) 3388 1199" class="text-light mt-1">(024) 3388 1199</a>
-
+              <a href="tel:+(024) 3388 1199" class="text-light">(024) 3388 1199</a>
+              <img src="./img/dathongbao.png" class="mt-3" alt="">
 
           </div>
       </div>

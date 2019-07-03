@@ -90,4 +90,10 @@ $(window).on('load',function() {
     $("[data-module='popup'],#close-popup").click(function (e) { 
         $('#popup').toggleClass('active');        
     });
+    $("form").submit(function(){
+        alert("Đã gửi thành công!!!");
+        this.reset();
+        return false;
+    });
+  
 })
